@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-700{
+    font-weight: 700;
+}
+.font-400{
+    font-weight: 400;
+}
+
+.font-800{
+    font-weight: 800;
+}
+
+.card_title{
+    @apply text-white font-700 text-xl cursor-pointer hover:text-Softorange;
+}
+.card_text{
+    @apply font-400 text-Grayishblue pt-3;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="mx-4 sm:mx-28 my-10 flex flex-row justify-between items-center">
+      <div>
+        <img src="./assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="sm:hidden" id="menuIcon">
+        <img src="./assets/images/icon-menu.svg" alt="menu">
+      </div>
+      <div class="hidden sm:block">
+        <ul class="flex space-x-5 font-400 text-Darkgrayishblue">
+          <li class="hover:text-Softorange cursor-pointer">Home</li>
+          <li class="hover:text-Softorange cursor-pointer">New</li>
+          <li class="hover:text-Softorange cursor-pointer">Popular</li>
+          <li class="hover:text-Softorange cursor-pointer">Trending</li>
+          <li class="hover:text-Softorange cursor-pointer">Categories</li>
+        </ul>
+      </div>
+    </header>
+    <!-- <div></div> -->
+    <main class="mx-4 grid sm:grid-cols-3 sm:gap-6 sm:mx-28">
+      <!-- left box -->
+      <div class="sm:col-span-2">
+        <!-- web image -->
+        <div>
+          <img src="./assets/images/image-web-3-desktop.jpg" class="h-64 sm:mx-0 sm:h-80" alt="web" />
+        </div>
+        <!-- the bright of future -->
+        <div class="flex flex-col sm:flex-row py-9 space-y-3">
+          <!-- title -->
+          <div>
+            <h1 class="font-800 text-4xl sm:text-5xl">The Bright Future of Web 3.0?</h1>
+          </div>
+          <!-- content -->
+          <div class="sm:ps-10">
+            <p class="font-400 text-lg text-Darkgrayishblue">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="bg-Softred text-white font-400 mt-6 px-10 py-3 text-sm tracking-[.2rem] hover:bg-Verydarkblue"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- rightbox -->
+      <div class="bg-Verydarkblue p-6">
+        <h1 class="font-700 text-4xl text-Softorange">New</h1>
+
+        <div class="mt-4">
+          <h1 class="card_title">Hydrogen VS Electric Cars</h1>
+          <p class="card_text">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+
+        <!-- underline -->
+        <div class="bg-Darkgrayishblue h-0.5 my-7"></div>
+
+        <div class="mt-4">
+          <h1 class="card_title">The Downsides of AI Artistry</h1>
+          <p class="card_text">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+
+        <!-- underline -->
+        <div class="bg-Darkgrayishblue h-0.5 my-7"></div>
+
+        <div class="mt-4">
+          <h1 class="card_title">Is VC Funding Drying Up?</h1>
+          <p class="card_text">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </main>
+    <section class="mx-4 sm:mx-28 my-16">
+      <div class="flex flex-col sm:flex-row justify-between space-y-10 sm:space-y-0">
+        <!-- card1 -->
+        <div class="flex">
+          <div>
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              class="h-40"
+              alt="retro"
+            />
+          </div>
+          <div class="space-y-2 ms-4">
+            <span class="text-4xl text-Grayishblue font-700">01</span>
+            <h2 class="font-800 hover:text-Softred cursor-pointer">Reviving Retro PCs</h2>
+            <p class="font-400">What happens when old PCs <br> are given modern upgrades?</p>
+          </div>
+        </div>
+         <!-- card2 -->
+         <div class="flex">
+          <div>
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              class="h-40"
+              alt="top-laptops"
+            />
+          </div>
+          <div class="space-y-2 ms-4">
+            <span class="text-4xl text-Grayishblue font-700">02</span>
+            <h2 class="font-800 hover:text-Softred cursor-pointer">Top 10 Laptops of 2022</h2>
+            <p class="font-400">Our best picks for various <br> needs and budgets.</p>
+          </div>
+        </div>
+          <!-- card3 -->
+          <div class="flex">
+            <div>
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                class="h-40"
+                alt="gaming-growth"
+              />
+            </div>
+            <div class="space-y-2 ms-4">
+              <span class="text-4xl text-Grayishblue font-700">03</span>
+              <h2 class="font-800 hover:text-Softred cursor-pointer">The Growth of Gaming</h2>
+              <p class="font-400">How the pandemic has sparked <br> fresh opportunities.</p>
+            </div>
+          </div>
+      </div>
+    </section> 
+<script src="./assets/js/main.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
